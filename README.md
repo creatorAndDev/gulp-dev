@@ -20,13 +20,13 @@
 
 ## markup handelbars
 
-`{{> header pageTitle="Index"}}
-
+`
+{{> header pageTitle="Index"}}
 {{#repeat 24}}
 	{{> thumb}}
 {{/repeat}}
-
-{{> footer}}`
+{{> footer}}
+`
 
 ## Helpers
 1. npm i from root folder
