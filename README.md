@@ -26,6 +26,7 @@
 	{{> thumb}}
 {{/repeat}}
 {{> footer}}
+```
 
 ## Helpers
 1. npm i from root folder
@@ -51,3 +52,4 @@
         --flex-items: 3;
     }
 }
+```
