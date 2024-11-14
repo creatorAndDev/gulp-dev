@@ -45,9 +45,12 @@
 }
 .thumbs-child {
     width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
+
     @media screen and (max-width: 991px) {
-        --flex-items: 4;
+        --flex-ite
+        ms: 4;
     }
+    
 	@media screen and (max-width: 767px) {
         --flex-items: 3;
     }
