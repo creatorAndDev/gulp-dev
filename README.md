@@ -20,13 +20,12 @@
 
 ## markup handelbars
 
-`
+```
 {{> header pageTitle="Index"}}
 {{#repeat 24}}
 	{{> thumb}}
 {{/repeat}}
 {{> footer}}
-`
 
 ## Helpers
 1. npm i from root folder
@@ -35,7 +34,8 @@
 
 ## grid thumbs
 
-```.thumbs-parent {
+```
+.thumbs-parent {
     --flex-gap: 6px;
     --flex-items: 5;
     display: flex;
