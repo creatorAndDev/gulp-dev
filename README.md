@@ -35,7 +35,7 @@
 
 ## grid thumbs
 
-`.thumbs-parent {
+```.thumbs-parent {
     --flex-gap: 6px;
     --flex-items: 5;
     display: flex;
@@ -50,4 +50,4 @@
 	@media screen and (max-width: 767px) {
         --flex-items: 3;
     }
-}`
+}
