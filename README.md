@@ -1,8 +1,8 @@
 # gulp-dev
-## NODE last v18
-### GULP 4
+### NODE last v18
+#### GULP 4
 
-## List plugins
+### List plugins
 - "gulp": "^4.0.2",
 - "gulp-autoprefixer": "^8.0.0",
 - "gulp-changed": "^4.0.2",
@@ -18,7 +18,7 @@
 - "gulp-sass": "^4.1.0"
 
 
-## markup handelbars
+### markup handelbars
 
 ```
 {{> header pageTitle="Index"}}
@@ -28,12 +28,12 @@
 {{> footer}}
 ```
 
-## Helpers
+### Helpers
 1. npm i from root folder
 2. cd dev
 3. open terminal => gulp
 
-## grid thumbs
+### grid thumbs
 
 ```
 .thumbs-parent {
