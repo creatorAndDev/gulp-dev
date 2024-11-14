@@ -1,5 +1,5 @@
 # gulp-dev
-### NODE last v18
+### use NODE last v18
 #### GULP 4
 
 ### List plugins
@@ -18,8 +18,7 @@
 - "gulp-sass": "^4.1.0"
 
 
-### markup handelbars
-
+### Markup handelbars
 ```
 {{> header pageTitle="Index"}}
 {{#repeat 24}}
@@ -33,8 +32,7 @@
 2. cd dev
 3. open terminal => gulp
 
-### grid thumbs
-
+### Grid thumbs
 ```
 .thumbs-parent {
     --flex-gap: 6px;
