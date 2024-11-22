@@ -1,13 +1,9 @@
-// @import 'reset';
-// @import 'media';
-// @import 'global';
-// @import 'icons';
-
-// @import 'includes/plugins';
+@use "includes/media-queries" as *;
+@use "includes/mixins" as *;
 
 .header{
-    background-color: #b4e9ff;
-    padding: 1rem 0;
-    flex-shrink: 0;
-    flex-grow: 0;
+	background-color: var(--bg-partial);
+	flex-shrink: 0;
+	flex-grow: 0;
+	padding: 1.68rem 0;
 }

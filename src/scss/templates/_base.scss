@@ -1,0 +1,146 @@
+@use "includes/root";
+@use "includes/res";
+
+@use "includes/media-queries" as *;
+@use "includes/mixins" as *;
+
+// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html {
+	height: 100%;
+	min-width: 320px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font: 400 var(--font-size-general)/var(--line-height-general) var(--default-font);
+	height: 100%;
+	min-width: 320px;
+	position: relative;
+	color: var(--color-white);
+	background: var(--bg-main);
+}
+
+a {
+	color: var(--color-main);
+	text-decoration: none;
+}
+
+input {
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+.svg-icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1064px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+//placeholder cross-browser
+input, textarea {
+	@include placeholder {color: var(--color-placeholder);}
+	&.placeholder {color: var(--color-placeholder) !important;}
+}
+
+//
+// .svg_icon {
+// 	width: 1em;
+// 	height: 1em;
+// 	display: inline-block;
+// 	vertical-align: -.125em;
+// }
+
+//example html icon tag
+// <svg class="svg_icon">
+// 	<use xlink:href="#icon-name"></use>
+// </svg>
+
+//ico
+// *[class*=ico_]{
+// 	display:inline-block;
+// 	vertical-align:top;
+// 	background:url(../images/sprite@320.png) no-repeat;
+// 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+// 		background:url(../images/sprite2x.png) no-repeat;
+// 		background-size: 0px 0px; // width and height sprite320
+// 	}
+// }
+// separator
+// @extend %separator;
+// %separator {
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	padding-left: 10px;
+// 	&:before {
+// 		content: '|';
+// 		padding-right: 10px;
+// 		color: #000;
+// 	}
+// 	&:first-child {
+// 		padding-left: 0;
+// 		&:before {
+// 			display: none;
+// 			padding-right: 0;
+// 		}
+// 	}
+// }
+
+// clearfix
+// @extend %clearfix;
+// %clearfix {
+// 	&:before {
+// 		content: "";
+// 		display: table;
+// 		clear: both;
+// 	}
+// 	&:after {
+// 		content: "";
+// 		display: table;
+// 		clear: both;
+// 	}
+// }
+//helpers
+//thumbs
+// .thumbs-parent {
+//     --flex-gap: 6px;
+//     --flex-items: 5;
+    
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: var(--flex-gap);
+// }
+// .thumbs-child {
+//     width: calc((100% / var(--flex-items)) - (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap)));
+//     @media screen and (max-width: 991px) {
+//         --flex-items: 4;
+//     }
+// 	@media screen and (max-width: 767px) {
+//         --flex-items: 3;
+//     }
+// }
+
+//media
+// @include max-screen(1000px) {}

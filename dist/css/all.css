@@ -1,31 +1,14 @@
-.header {
-	background-color: #b4e9ff;
-	padding: 1rem 0;
-	-ms-flex-negative: 0;
-	    flex-shrink: 0;
-	-webkit-box-flex: 0;
-	    -ms-flex-positive: 0;
-	        flex-grow: 0;
-}
-
-.main {
-	background-color: #ffd8d8;
-	-ms-flex-negative: 1;
-	    flex-shrink: 1;
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
-	padding: 1rem 0;
-}
-
-.footer {
-	background-color: #b4e9ff;
-	-ms-flex-negative: 0;
-	    flex-shrink: 0;
-	-webkit-box-flex: 0;
-	    -ms-flex-positive: 0;
-	        flex-grow: 0;
-	padding: 1rem 0;
+:root {
+	--font-size-general: 14px;
+	--line-height-general: 1.2;
+	--default-font: Arial, sans-serif;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-active: #A926C2;
+	--color-placeholder: #878787;
+	--bg-main: #111113;
+	--bg-partial: #18181A;
+	--bg-selection: #345dff;
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, button, input, p, blockquote, th, td {
@@ -71,16 +54,6 @@ textarea {
 	outline: none;
 }
 
-:root {
-	--font-size-general: 16px;
-	--line-height-general: 1.2;
-	--default-font: Arial, sans-serif;
-	--color-main: #333;
-	--color-selection: #fff;
-	--bg-main: #fff;
-	--bg-selection: #345dff;
-}
-
 html {
 	height: 100%;
 	min-width: 320px;
@@ -89,11 +62,11 @@ html {
 }
 
 body {
-	font: var(--font-size-general)/var(--line-height-general) var(--default-font);
+	font: 400 var(--font-size-general)/var(--line-height-general) var(--default-font);
 	height: 100%;
 	min-width: 320px;
 	position: relative;
-	color: var(--color-main);
+	color: var(--color-white);
 	background: var(--bg-main);
 }
 
@@ -113,47 +86,13 @@ input {
 	        box-sizing: border-box;
 	outline: none;
 }
-*:before, *:after {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-* ::-moz-selection {
-	background: var(--bg-selection);
-	color: var(--color-selection);
-}
-* ::selection {
-	background: var(--bg-selection);
-	color: var(--color-selection);
-}
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-	color: var(--color-main);
-}
-input:-moz-placeholder, textarea:-moz-placeholder {
-	color: var(--color-main);
-	opacity: 1;
-}
-input::-moz-placeholder, textarea::-moz-placeholder {
-	color: var(--color-main);
-	opacity: 1;
-}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-	color: var(--color-main);
-}
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
-	color: transparent;
-}
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-	color: transparent;
-}
-input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
-	color: transparent;
-}
-input.placeholder, textarea.placeholder {
-	color: var(--color-main) !important;
+.svg-icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
 }
 
 .wrapper {
@@ -172,4 +111,64 @@ input.placeholder, textarea.placeholder {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: var(--color-placeholder);
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+	color: var(--color-placeholder);
+	opacity: 1;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: var(--color-placeholder);
+	opacity: 1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color: var(--color-placeholder);
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+	color: transparent;
+}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+	color: transparent;
+}
+input.placeholder, textarea.placeholder {
+	color: var(--color-placeholder) !important;
+}
+
+.header {
+	background-color: var(--bg-partial);
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+	padding: 1.68rem 0;
+}
+
+.main {
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	padding: 1.68rem 0;
+}
+
+.footer {
+	background-color: var(--bg-partial);
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	-webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
+	padding: 1.68rem 0;
+	color: var(--color-dark-gray);
 }

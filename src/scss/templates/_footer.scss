@@ -1,13 +1,10 @@
-// @import 'reset';
-// @import 'media';
-// @import 'global';
-// @import 'icons';
+@use "includes/media-queries" as *;
+@use "includes/mixins" as *;
 
-// @import 'includes/plugins';
-//
 .footer{
-    background-color: #b4e9ff;
-    flex-shrink: 0;
-    flex-grow: 0;
-    padding: 1rem 0;
+	background-color: var(--bg-partial);
+	flex-shrink: 0;
+	flex-grow: 0;
+	padding: 1.68rem 0;
+	color: var(--color-dark-gray);
 }

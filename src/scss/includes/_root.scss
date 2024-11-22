@@ -1,11 +1,14 @@
 :root {
-    --font-size-general: 16px;
-    --line-height-general: 1.2;
-    --default-font: Arial, sans-serif;
+	--font-size-general: 14px;
+	--line-height-general: 1.2;
+	--default-font: Arial, sans-serif;
 
-    --color-main: #333;
-    --color-selection: #fff;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-active: #A926C2;
+	--color-placeholder: #878787;
 
-    --bg-main: #fff;
-    --bg-selection: #345dff;
+	--bg-main: #111113;
+	--bg-partial: #18181A;
+	--bg-selection: #345dff;
 }
